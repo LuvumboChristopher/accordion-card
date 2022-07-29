@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+
+    --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --Soft-red: hsl(14, 88%, 65%);
+    --Soft-violet: hsl(273, 75%, 66%);
+    --Soft-blue: hsl(240, 73%, 65%);
+    --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --Dark-grayish-blue: hsl(240, 6%, 50%);
+    --Light-grayish-blue: hsl(240, 5%, 91%);
+    --Font-size: 12px;
+    --font-family: 'Kumbh Sans', sans-serif;
+
+}
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    font-size: var(--Font-size);
+    font-family: var(--font-family);
+    background: linear-gradient(180deg, var(--Soft-violet) 26%, var(--Soft-blue) 100%);
+}
+
+.card {
+    position: relative;
+    width: 65vw;
+    height: 65vh;
+    border-radius: 25px;
+    background-image: url(./images/illustration-woman-online-desktop.svg), url(./images/bg-pattern-desktop.svg);
+    background-position: -7rem 50%, -32rem -12rem;
+    background-size: 25rem, 50rem;
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    background-color:hsl(0, 0%, 100%);
+    box-shadow: 0px 25px 70px 2px hsla(0, 0%, 0%, 0.479);
+}
+
+
+.card-container {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 200px;
+    height: 100%;
+    padding: 2rem 0;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    
+}
+
+.question {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--Dark-grayish-blue);
+}
+
+.answer{
+    display: none;
+}
+
+.show-answer {
+    display: block;
+}
